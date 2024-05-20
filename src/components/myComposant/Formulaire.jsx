@@ -40,9 +40,6 @@ export const Formulaire = ({ ajouterLivre }) => {
       auteur: "",
     });
   };
-  const handleDelete = () => {
-    onDelete(livre.identifiant);
-  };
   return (
     <Dialog>
       <DialogTrigger asChild>

@@ -30,19 +30,7 @@ function App() {
   const supprimerLivre = (identifiant) => {
     setLivres(livres.filter((livre) => livre.identifiant !== identifiant));
   };
-  const modifierLivre = (identifiant) => {
-    const livre = livres.find((livre) => livre.identifiant === identifiant);
-    setLivreAModifier(livre);
-  };
 
-  const validerModification = (nouveauLivre) => {
-    setLivres(
-      livres.map((livre) =>
-        livre.identifiant === livreAModifier.identifiant ? nouveauLivre : livre
-      )
-    );
-    setLivreAModifier(null);
-  };
   return (
     <>
       <h1 className="my-5 flex justify-center text-4xl">
